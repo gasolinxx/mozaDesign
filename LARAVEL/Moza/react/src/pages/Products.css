@@ -1,0 +1,144 @@
+/* src/pages/Products.css */
+
+.products-page {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(232, 3, 18);
+    padding: 2rem;
+    color: #fff;
+  }
+  
+
+  .navbar2 {
+    margin-top:2cm;
+    margin-bottom:1.5cm;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* gap between navbar-items and search-bar */
+  flex-wrap: wrap;
+}
+
+  
+  
+.navbar-items {
+  display: flex;
+  gap: 1rem;
+  white-space: nowrap;
+  align-items: center;
+  margin: 0 auto; /* This centers the items inside the parent navbar */
+}
+
+  
+  .nav-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+  
+  /* Update the triangle button styles */
+.toggle-button {
+    background-color: #c8e28d;  /* Greenish background */
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 30px;  /* Set the width */
+    height: 30px;  /* Set the height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;  /* Optional, for rounded edges */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Subtle shadow for depth */
+  }
+  
+  .toggle-button::before {
+    content: '\2192';  /* Right-pointing triangle symbol (unicode character) */
+    font-size: 2rem;  /* Larger size for the triangle */
+    color: #fff;  /* White color for the triangle */
+  }
+  
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 5rem;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #45a049;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .product-item {
+    text-align: center;
+  }
+  
+  .product-box {
+    width: 200px; /* initial width and height 100px */
+    height: 200px;
+    background-color: #ccc;
+    margin: 0 auto;
+    border-radius: 5px;
+   
+  }
+
+  .product-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+  
+  .product-item p {
+    margin-top: 0.5rem;
+     margin-bottom:30px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

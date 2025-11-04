@@ -1,0 +1,117 @@
+.agent-container {
+  background-color: rgb(221, 219, 219); /* same red as .hero */
+  color: rgb(0, 0, 0);
+  padding: 3rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-left:2cm;
+  margin-right:2cm;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top:2cm;
+  margin-bottom:1cm;
+  border-radius: 20px; /* Optional: rounded corners */
+}
+
+.filter-container {
+  margin-top:2cm;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.filter-label {
+  font-weight: 600;
+}
+
+.filter-input {
+  padding: 0.4rem 0.6rem;
+  font-size: 1.2rem;
+  width: 250px;
+  max-width: 100%;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filter-input:focus {
+  border-color: rgb(227, 0, 15);
+}
+
+
+.agent-table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  color: #222;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  font-size: 1.4rem;
+  min-width: 600px;
+  
+}
+
+.agent-table thead th {
+  background-color: rgb(20, 16, 16); /* bright red */
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  letter-spacing: 0.05em;
+
+}
+
+.agent-table tbody td {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.agent-table tbody tr:hover {
+  background-color: rgba(194, 223, 226, 0.6); /* subtle pinkish hover */
+  cursor: pointer;
+}
+
+.agent-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Responsive: horizontal scroll on small devices */
+@media (max-width: 700px) {
+  .agent-container {
+    padding: 2rem 1rem;
+    font-size: 1.4rem;
+  }
+
+  .agent-table {
+    display: block;
+    overflow-x: auto;
+    min-width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .agent-table thead, 
+  .agent-table tbody, 
+  .agent-table th, 
+  .agent-table td, 
+  .agent-table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+}
+
+/* Phone number link style */
+.agent-table a {
+  color: rgb(227, 0, 15);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.agent-table a:hover {
+  text-decoration: underline;
+}

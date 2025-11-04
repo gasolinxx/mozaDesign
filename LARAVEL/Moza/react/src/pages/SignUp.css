@@ -1,0 +1,87 @@
+/* Full page background */
+.signup-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8fafc; /* soft light gray-blue */
+  padding: 1rem;
+}
+
+/* Signup card container */
+.signup-card {
+  background: rgb(192, 228, 254);
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.372);
+  text-align: center;
+}
+
+/* Title */
+.signup-card h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1f2937; /* dark gray */
+}
+
+/* Input fields */
+.signup-card input {
+  width: 100%;
+  padding: 0.85rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #f9fafb;
+  transition: border-color 0.2s ease;
+}
+
+.signup-card input:focus {
+  outline: none;
+  border-color: #3b82f6; /* blue highlight */
+  background: white;
+}
+
+/* Button */
+.signup-card button {
+  width: 100%;
+  padding: 0.9rem;
+  background: #3b82f6; /* primary blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-card button:hover {
+  background: #2563eb; /* darker blue on hover */
+}
+
+.signup-card button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* Status messages */
+.status {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.status.success {
+  background: #d1fae5; /* light green */
+  color: #065f46; /* dark green */
+}
+
+.status.error {
+  background: #fee2e2; /* light red */
+  color: #991b1b; /* dark red */
+}

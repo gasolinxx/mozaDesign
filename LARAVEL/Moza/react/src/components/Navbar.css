@@ -1,0 +1,135 @@
+.navbar {
+  background-color: rgb(238, 8, 8);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative; /* for dropdown positioning */
+  margin-bottom:0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+}
+
+
+.nav-links li:hover,
+.nav-links li:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.burger-toggle {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+  width: 5cm;
+}
+
+.burger-toggle:hover {
+  background-color: #218838;
+}
+
+.menu-icon {
+  font-size: 20px;
+}
+
+.profile-circle {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-circle img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: absolute;
+  right: 2rem;  /* align with navbar padding */
+  top: 55px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  padding: 10px 0;
+  min-width: 200px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Links inside dropdown */
+.dropdown a {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.dropdown a:hover {
+  background-color: #f7f7f7;
+}
+
+/* Separator line */
+.dropdown hr {
+  margin: 8px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* Logout button styled like links */
+.logout-btn {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  text-align: left;
+  width: 100%;
+  color: #030000;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #171616;
+}

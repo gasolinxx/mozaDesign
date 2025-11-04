@@ -1,0 +1,37 @@
+.footer {
+  background:rgb(234, 3, 3);
+  padding: 2rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-socials a {
+  font-size: 1.5rem;
+  color: rgb(236, 223, 223);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.2);
+  color: #057de0; /* gold hover */
+}

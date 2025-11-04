@@ -1,0 +1,278 @@
+/* Define color variables for easier theming */
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --success-color: #28a745;
+  --success-hover: #1e7e34;
+  --danger-color: #dc3545;
+  --danger-hover: #b02a37;
+  --gray-light: #f7f9fc;
+  --gray-medium: #ccc;
+  --gray-dark: #555;
+  --text-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container */
+.profile-page {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: var(--gray-light);
+  border-radius: 10px;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+/* Left panel */
+.profile-left {
+  flex: 1;
+  max-width: 320px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  text-align: center;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Avatar container */
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border: 2px solid #ddd;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avatar-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--gray-medium);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Basic info */
+.profile-left h2 {
+  margin: 0 0 15px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.profile-left p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: var(--gray-dark);
+  word-break: break-word;
+}
+
+/* Edit button */
+.edit-btn {
+  margin-top: auto;
+  padding: 12px 30px;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.edit-btn:hover,
+.edit-btn:focus {
+  background-color: var(--primary-hover);
+  outline: none;
+  box-shadow: 0 0 6px var(--primary-hover);
+}
+
+/* Right panel */
+.profile-right {
+  flex: 2;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+/* Section title */
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 8px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Profile details view */
+.profile-view p {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  color: var(--text-color);
+}
+
+.profile-view strong {
+  display: inline-block;
+  width: 140px;
+  color: var(--gray-dark);
+  font-weight: 600;
+}
+
+/* Form layout */
+form {
+  font-size: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px 30px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* Form labels */
+.form-grid label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--gray-dark);
+}
+
+/* Form inputs */
+.form-grid input[type="email"],
+.form-grid input[type="text"],
+.form-grid input[type="date"],
+.form-grid select,
+.form-grid textarea,
+.form-grid input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: var(--font-family);
+}
+
+.form-grid input[type="email"]:focus,
+.form-grid input[type="text"]:focus,
+.form-grid input[type="date"]:focus,
+.form-grid select:focus,
+.form-grid textarea:focus,
+.form-grid input[type="file"]:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 8px var(--primary-color);
+}
+
+/* Textarea */
+.form-grid textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Buttons container */
+.form-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 18px;
+  justify-content: flex-end;
+}
+
+/* Buttons styling */
+.update-btn,
+.cancel-btn {
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.update-btn {
+  background-color: var(--success-color);
+  color: #fff;
+}
+
+.update-btn:hover,
+.update-btn:focus {
+  background-color: var(--success-hover);
+  box-shadow: 0 0 10px var(--success-hover);
+  outline: none;
+}
+
+.cancel-btn {
+  background-color: var(--danger-color);
+  color: #fff;
+}
+
+.cancel-btn:hover,
+.cancel-btn:focus {
+  background-color: var(--danger-hover);
+  box-shadow: 0 0 10px var(--danger-hover);
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .profile-page {
+    flex-direction: column;
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  .profile-left {
+    max-width: none;
+    border-right: none;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .profile-right {
+    padding-left: 0;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

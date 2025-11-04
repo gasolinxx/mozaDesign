@@ -1,0 +1,177 @@
+/* Core Layout */
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+/* Headings */
+.form-title {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #111827;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 1.25rem;
+  padding-left: 0.75rem;
+  border-left: 4px solid #2563eb;
+}
+
+/* Form Fields */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+section {
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+/* Section Title */
+section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+/* Grid Layout */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Sections */
+.order-section {
+  padding: 1.5rem;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.order-section:hover {
+  background-color: #e8f0fe;
+}
+
+.upload-artwork input[type="file"] {
+  padding: 0.75rem;
+  border: 2px dashed #cbd5e1;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 2rem 0;
+}
+
+/* Buttons */
+.button-group {
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-red,
+.btn-secondary,
+.btn-remove {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-red {
+  background-color: #dc2626;
+  color: white;
+}
+
+.btn-red:hover {
+  background-color: #b91c1c;
+}
+
+.btn-secondary {
+ background-color: #1d4ed8;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-remove {
+  background-color: #6b7280;
+  color: white;
+}
+
+.btn-remove:hover {
+  background-color: #4b5563;
+}
+
+/* Utilities */
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.required {
+  color: #dc2626;
+  font-weight: bold;
+}

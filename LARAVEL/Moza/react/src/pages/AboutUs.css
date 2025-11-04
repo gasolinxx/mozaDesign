@@ -1,0 +1,474 @@
+
+
+.about-us {
+  background-color: red;
+  margin: 0; /* remove default white margins */
+}
+
+.company-content {
+  margin-top: 0; /* remove the forced white gap */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+  
+  .company-text {
+    flex: 1;
+    min-width: 300px;
+    
+  }
+  
+  .company-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color:white;
+  }
+  
+  .company-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .specializations p {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color:white;
+    
+  }
+  
+  .specializations ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+  }
+  
+  .specializations li {
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+  }
+  
+
+
+  .company-image {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(155, 66, 66, 0.1);
+}
+  
+  .image-placeholder {
+    width: 100%;
+    max-width: 400px;
+    height: 280px;
+    background-color: #fff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  
+
+  /* General section styling */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* WHAT WE DO Section */
+  .what-we-do {
+   
+    color: white;
+    margin-bottom: 60px;
+  }
+  
+  .what-we-do h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .service-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .service-card {
+    width: 250px;
+    height:400px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.379);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    background-color: #cfee87; /* Placeholder */
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .service-card p {
+    color:rgb(16, 16, 230);
+      margin-bottom: 20px; /* adjust as needed */
+      margin-top:5px;
+}
+
+  
+  /* Staggered look using nth-child */
+  .service-card:nth-child(odd) {
+    transform: translateY(20px);
+  }
+  
+  .service-card:nth-child(even) {
+    transform: translateY(-10px);
+  }
+  
+/* OUR EXPERIENCE Section */
+.our-experience {
+
+  color: #fff7f7;
+  padding: 60px 20px;
+  text-align: center;
+}
+  
+
+.our-experience h2 {
+  font-size: 2.0rem;
+   font-weight: bold;
+  margin-bottom: 20px;
+  color:white;
+}
+
+/* Container that wraps the experience slider and text */
+.experience-container {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  max-width: 700px;
+  margin: 30px auto;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+
+}
+
+.experience-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.experience-slider img,
+.experience-slider video {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Paragraph under the slider */
+.experience-container p {
+  color: #111;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 0;
+  text-align: justify;
+}
+
+  
+
+
+  /* Get In Touch Section */
+  .contact {
+    padding: 60px 20px;
+
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+    color: rgb(228, 222, 222);
+    margin-bottom: 30px;
+  }
+  
+  .contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f2eded;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.452);
+    margin: 30px auto;
+  }
+
+  .contact-info p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6; /* Line height to give spacing between lines */
+  }
+  
+  .operating-hours p {
+    margin: 5px 0; /* Adds spacing between each paragraph */
+  }
+  
+  .operating-hours p:first-of-type {
+    font-weight: bold; /* Make the "Operating Hours" label bold */
+  }
+  
+  .operating-hours {
+    margin-top: 20px; /* Adds space between the address and operating hours */
+    padding-left: 10px; /* Adds some left padding for styling */
+    margin-bottom:1.5cm;
+  }
+  
+  
+  .location {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-weight: bold;
+  }
+  
+  .location i {
+    font-size: 1.8rem;
+    color: #007bff;
+  }
+  
+  .contact-methods {
+    margin-bottom: 10px;
+    margin-top:1cm;
+  }
+  
+  .method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-left:1.5cm;
+    font-size: 1.2rem;
+  }
+  
+  .method i {
+    font-size: 1.6rem;
+    color: #007bff;
+  }
+  
+  .method span {
+    font-size: 1.2rem;
+    color: #333333;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    font-size: 1.8rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ffcc00; /* Yellow color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact h2 {
+      font-size: 2rem;
+    }
+  
+    .contact p {
+      font-size: 1rem;
+    }
+  
+    .contact-info {
+      font-size: 1rem;
+    }
+  
+    .method {
+      font-size: 1rem;
+    }
+  }
+  
+  
+
+
+/* Customer Feedback Section */
+.feedback {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.feedback h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+
+.feedback-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.rating-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #32aa14;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.star-rating {
+  font-size: 18px;
+  color: gold;
+}
+
+.feedback-grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px; /* You can adjust this to control total grid width */
+  margin: 0 auto;   /* Center horizontally */
+  padding: 0 3cm;   /* Optional: adds inner space without breaking centering */
+  box-sizing: border-box;
+}
+
+
+.feedback-item {
+  background-color: rgb(228, 222, 222);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Reserve space for pagination below slides */
+.feedback-slider {
+  padding-bottom: 1.5cm;
+}
+
+/* Pagination styles */
+.feedback .swiper-pagination {
+  position: relative !important;
+  margin-top: 1cm;
+  text-align: center;
+  z-index: 10;
+}
+
+.feedback .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  opacity: 0.7;
+  margin: 0 5px !important;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.feedback .swiper-pagination-bullet-active {
+  background: #000;
+  opacity: 1;
+}
+
+
+
+
+  /* Footer */
+  footer {
+    background-color: rgb(232, 3, 18);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .social-icons a {
+    font-size: 1.8rem;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-icons a:hover {
+    color: #ffc107;
+  }
+  
+  /* Footer responsive */
+  @media (max-width: 768px) {
+    .feedback-item {
+      width: 90%;
+      margin: 10px auto;
+    }
+  
+    .rating-circle {
+      width: 80px;
+      height: 80px;
+      font-size: 24px;
+    }
+  
+    .feedback-grid {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  }
+  

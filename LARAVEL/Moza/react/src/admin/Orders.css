@@ -1,0 +1,339 @@
+.admin-orders {
+  padding: 2.5rem;
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-orders h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Table styling */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.orders-table th {
+  background-color: #0b172a;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.orders-table tr:hover {
+  background-color: #ffeef0;
+  transition: background-color 0.3s ease;
+}
+
+.orders-table td {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.orders-table td a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.orders-table td a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdowns */
+select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  background-color: #fff;
+  transition: border 0.2s;
+}
+
+select:focus {
+  border-color: #e63946;
+  outline: none;
+}
+
+/* Buttons */
+button,
+.btn-download {
+  background-color: #3978e6;
+  color: white;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.btn-download {
+  margin-top: 8px;
+  background-color: #0d6efd;
+  color:white;
+}
+
+.btn-save {
+  background-color: #28a745; /* Bootstrap green */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+/* Status badges */
+.status,
+.payment {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.status.pending { background: #fff4e5; color: #d97706; }
+.status.processing { background: #e0f2fe; color: #0284c7; }
+.status.completed { background: #dcfce7; color: #16a34a; }
+.status.cancelled { background: #fee2e2; color: #dc2626; }
+
+.payment.unpaid { background: #fef2f2; color: #b91c1c; }
+.payment.deposit { background: #fef9c3; color: #a16207; }
+.payment.paid { background: #d1fae5; color: #059669; }
+.payment.lo { background: #ede9fe; color: #7c3aed; }
+
+/* Specs list */
+.specs-list {
+  padding-left: 1.2rem;
+  margin: 0;
+  list-style-type: disc;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.specs-list li {
+  margin-bottom: 4px;
+}
+
+/* Artwork section */
+.thumbnail,
+.thumb-preview {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: transform 0.25s ease;
+}
+
+.thumbnail:hover,
+.thumb-preview:hover {
+  transform: scale(1.08);
+}
+
+.upload-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-link {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 24, 39, 0.85); /* darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 1000px;
+  max-height: 90%;
+  width: 90%;
+  overflow: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 100vh;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  color: #444;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+
+
+/* ReceiptModal.css */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.receipt-table th,
+.receipt-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.receipt-table th {
+  width: 150px;
+}
+
+.receipt-table td ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.modal-buttons button:hover {
+  background-color: #eee;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .orders-table thead {
+    display: none;
+  }
+
+  .orders-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .orders-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .orders-table td:last-child {
+    border-bottom: none;
+  }
+
+  .orders-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+  }
+
+  button,
+  .btn-download {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+}
